@@ -1,7 +1,11 @@
 .DisplayMeme {
     font-family: 'Luckiest Guy', cursive;
+    color: #fff;
     display: grid;
     grid-template-rows: 1fr 1fr 1fr;
+    background-repeat: no-repeat;
+    background-size: cover;
+
 }
 
 .DisplayMeme .topText {

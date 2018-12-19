@@ -1,10 +1,10 @@
 import React from 'react'
 import './ChangeText.css'
 
-const ChangeText = ({text, handleChange, value}) => {
+const ChangeText = ({text, handleChange}) => {
     return (
         <div className='ChangeText'>
-            <input type='text' defaultValue={text} value={value} onBlur={handleChange} />
+            <input type='text' defaultValue={text} onChange={handleChange} />
         </div>
     )
 }

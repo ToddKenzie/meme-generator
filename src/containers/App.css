@@ -1,6 +1,5 @@
 .App {
-    margin: 2%;
     display: grid;
-    grid-template-columns: 1fr 2fr;
-    grid-template-rows: 2fr 1fr;
+    grid-template-columns: 33% 66%;
+    grid-template-rows: 66vh 33vh;
 }
