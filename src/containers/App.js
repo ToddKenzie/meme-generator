@@ -1,7 +1,8 @@
 import React, { Component } from 'react';
 import './App.css';
-import ChangeText from '../components/ChangeText/ChangeText';
 import MemeInputPanel from '../components/MemeInputPanel/MemeInputPanel';
+import DisplayMeme from '../components/DisplayMeme/DisplayMeme';
+import ThumbnailPicker from '../components/ThumbnailPicker/ThumbnailPicker';
 
 class App extends Component {
   constructor() {
@@ -25,6 +26,11 @@ class App extends Component {
   render() {
     return (
       <div className="App">
+        <ThumbnailPicker
+          images={this.state.images} />
+        <DisplayMeme
+          topText={this.state.topText}
+          bottomText={this.state.bottomText} />
         <MemeInputPanel
           topText={this.state.topText}
           bottomText={this.state.bottomText}

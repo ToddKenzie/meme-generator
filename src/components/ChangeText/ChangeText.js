@@ -1,13 +1,12 @@
-import React, { Component } from 'react'
+import React from 'react'
+import './ChangeText.css'
 
-class ChangeText extends Component {
-    render() {
-        return (
-            <div className='changeText'>
-                <input type='text' defaultValue={this.props.text} value={this.props.value} onBlur={this.props.handleChange} />
-            </div>
-        )
-    }
+const ChangeText = ({text, handleChange, value}) => {
+    return (
+        <div className='ChangeText'>
+            <input type='text' defaultValue={text} value={value} onBlur={handleChange} />
+        </div>
+    )
 }
 
 export default ChangeText
